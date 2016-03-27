@@ -18,19 +18,19 @@ function On_Init()
 		global.tick = global.tick + 1800
 	end
 	if game.entity_prototypes["young-berserk-biter"] then
-		DytechDetected = true
+		global.DytechDetected = true
 	else
-		DytechDetected = false
+		global.DytechDetected = false
 	end
 	if game.entity_prototypes["small-biter-Mk2"] then
-		NatEvoDetected = true
+		global.NatEvoDetected = true
 	else
-		NatEvoDetected = false
+		global.NatEvoDetected = false
 	end
 end
 
 script.on_event(defines.events.on_entity_died, function(event)
-	if event.entity.name == "small-biter" or event.entity.name == "small-spitter" or event.entity.name == "small-biter-Mk2" or event.entity.name == "small-spitter-Mk2" or event.entity.name == "small-biter-Mk3" or event.entity.name == "small-spitter-Mk3" then
+	if ignoredEnemiesTable[event.entity.name] then
 		return
 	end
 	if global.tick < event.tick then

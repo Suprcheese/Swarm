@@ -10,10 +10,26 @@ unitsSpawnUnitsOnDeath = true
 
 
 -- ADVANCED
+-- This table enumerates enemies that are too small to fragment any further on death.
+ignoredEnemiesTable = {}
+ignoredEnemiesTable["small-biter"] = 				true
+ignoredEnemiesTable["small-spitter"] = 				true
+ignoredEnemiesTable["small-biter-Mk2"] = 			true
+ignoredEnemiesTable["small-spitter-Mk2"] = 			true
+ignoredEnemiesTable["small-biter-Mk3"] = 			true
+ignoredEnemiesTable["small-spitter-Mk3"] = 			true
+ignoredEnemiesTable["5d-small-biter-laser"] = 		true
+ignoredEnemiesTable["5d-small-biter-physical"] = 	true
+ignoredEnemiesTable["5d-small-biter-explosive"] = 	true
+ignoredEnemiesTable["5d-small-spiter-rocket"] = 	true
+ignoredEnemiesTable["5d-small-spiter-fire"] = 		true
+
+
 -- The result in the right column is the enemy that appears when the enemy in the left column dies. So if a behemoth spitter dies, medium spitters will appear.
 -- For spawners, the current evolution factor rounded down to the nearest 10% (though 99% is rounded up to 100%) is used to look up which enemy appears.
 -- So at 74% evo, a biter spawner will spawn big biters on death.
 subEnemyNameTable = {}
+
 -- Vanilla
 subEnemyNameTable["medium-biter"] = 				"small-biter"
 subEnemyNameTable["big-biter"] = 					"small-biter"
@@ -133,7 +149,7 @@ subEnemyNameTable["dyzilla-spawner"][8] = 			"dyzilla-unit-3"
 subEnemyNameTable["dyzilla-spawner"][9] = 			"dyzilla-unit-3"
 subEnemyNameTable["dyzilla-spawner"][10] =			"dyzilla-unit-4"  -- Good luck with that!
 
-if DytechDetected then
+if global.DytechDetected then
 subEnemyNameTable["biter-spawner"][0] = 			"small-biter"
 subEnemyNameTable["biter-spawner"][1] = 			"small-biter"
 subEnemyNameTable["biter-spawner"][2] = 			"medium-biter"
@@ -147,7 +163,7 @@ subEnemyNameTable["biter-spawner"][9] = 			"adult-elder-biter"
 subEnemyNameTable["biter-spawner"][10] =			"adult-queen-biter"
 end
 
-if DytechDetected then
+if global.DytechDetected then
 subEnemyNameTable["spitter-spawner"][0] = 			"small-spitter"
 subEnemyNameTable["spitter-spawner"][1] = 			"small-spitter"
 subEnemyNameTable["spitter-spawner"][2] = 			"medium-spitter"
@@ -171,7 +187,7 @@ subEnemyNameTable["medium-spitter-Mk3"] = 			"small-spitter-Mk3"
 subEnemyNameTable["big-spitter-Mk2"] = 				"small-spitter-Mk3"
 subEnemyNameTable["big-spitter-Mk3"] = 				"small-spitter-Mk3"
 
-if NatEvoDetected then
+if global.NatEvoDetected then
 subEnemyNameTable["biter-spawner"][0] = 			"small-biter"
 subEnemyNameTable["biter-spawner"][1] = 			"small-biter-Mk2"
 subEnemyNameTable["biter-spawner"][2] = 			"small-biter-Mk3"
@@ -185,7 +201,7 @@ subEnemyNameTable["biter-spawner"][9] = 			"behemoth-biter"
 subEnemyNameTable["biter-spawner"][10] =			"behemoth-biter"
 end
 
-if NatEvoDetected then
+if global.NatEvoDetected then
 subEnemyNameTable["spitter-spawner"][0] = 			"small-spitter"
 subEnemyNameTable["spitter-spawner"][1] = 			"small-spitter-Mk2"
 subEnemyNameTable["spitter-spawner"][2] = 			"small-spitter-Mk3"
@@ -198,6 +214,21 @@ subEnemyNameTable["spitter-spawner"][8] = 			"big-spitter-Mk3"
 subEnemyNameTable["spitter-spawner"][9] = 			"behemoth-spitter"
 subEnemyNameTable["spitter-spawner"][10] =			"behemoth-spitter"
 end
+
+-- 5dim Battlefield
+subEnemyNameTable["5d-medium-biter-laser"] = 		"5d-small-biter-laser"
+subEnemyNameTable["5d-medium-biter-physical"] = 	"5d-small-biter-physical"
+subEnemyNameTable["5d-medium-biter-explosive"] = 	"5d-small-biter-explosive"
+subEnemyNameTable["5d-big-biter-laser"] = 			"5d-small-biter-laser"
+subEnemyNameTable["5d-big-biter-physical"] = 		"5d-small-biter-physical"
+subEnemyNameTable["5d-big-biter-explosive"] = 		"5d-small-biter-explosive"
+
+subEnemyNameTable["5d-medium-spiter-rocket"] = 		"5d-small-spiter-rocket"
+subEnemyNameTable["5d-medium-spiter-fire"] = 		"5d-small-spiter-fire"
+subEnemyNameTable["5d-big-spiter-rocket"] = 		"5d-small-spiter-rocket"
+subEnemyNameTable["5d-big-spiter-fire"] = 			"5d-small-spiter-fire"
+
+
 
 -- NUMBERS
 
@@ -458,7 +489,7 @@ subEnemyNumberTable["adult-queen-biter"][10] =		3	-- big
 
 subEnemyNumberTable["adult-queen-spitter"] = 		subEnemyNumberTable["adult-queen-biter"]
 
-if DytechDetected then
+if global.DytechDetected then
 subEnemyNumberTable["biter-spawner"][0] = 			8	--small
 subEnemyNumberTable["biter-spawner"][1] = 			9	--small
 subEnemyNumberTable["biter-spawner"][2] = 			6	--medium
@@ -472,7 +503,7 @@ subEnemyNumberTable["biter-spawner"][9] = 			3	--adult-elder
 subEnemyNumberTable["biter-spawner"][10] =			2	--adult-queen
 end
 
-if DytechDetected then
+if global.DytechDetected then
 subEnemyNumberTable["spitter-spawner"][0] = 		8	--small
 subEnemyNumberTable["spitter-spawner"][1] = 		9	--small
 subEnemyNumberTable["spitter-spawner"][2] = 		6	--medium
@@ -552,37 +583,25 @@ subEnemyNumberTable["dyzilla-unit-4"][9] =			2	-- queen
 subEnemyNumberTable["dyzilla-unit-4"][10] =			2	-- queen
 
 -- Natural Evolution Enemies
-subEnemyNumberTable["medium-biter-Mk2"] = {}
-subEnemyNumberTable["medium-biter-Mk2"][0] = 		2	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][1] = 		2	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][2] = 		2	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][3] = 		2	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][4] = 		2	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][5] = 		2	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][6] = 		2	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][7] = 		2	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][8] = 		2	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][9] = 		3	-- small-Mk2
-subEnemyNumberTable["medium-biter-Mk2"][10] =		3	-- small-Mk2
+subEnemyNumberTable["medium-biter-Mk2"] = 			subEnemyNumberTable["medium-biter"]
+subEnemyNumberTable["medium-spitter-Mk2"] = 		subEnemyNumberTable["medium-biter"]
+subEnemyNumberTable["medium-biter-Mk3"] = 			subEnemyNumberTable["medium-biter"]
+subEnemyNumberTable["medium-spitter-Mk3"] = 		subEnemyNumberTable["medium-biter"]
 
-subEnemyNumberTable["medium-spitter-Mk2"] = 		subEnemyNumberTable["medium-biter-Mk2"]
-subEnemyNumberTable["medium-biter-Mk3"] = 			subEnemyNumberTable["medium-biter-Mk2"]
-subEnemyNumberTable["medium-spitter-Mk3"] = 		subEnemyNumberTable["medium-biter-Mk2"]
+subEnemyNumberTable["big-biter-Mk2"] = 				subEnemyNumberTable["big-biter"]
+subEnemyNumberTable["big-spitter-Mk2"] = 			subEnemyNumberTable["big-biter"]
+subEnemyNumberTable["big-biter-Mk3"] = 				subEnemyNumberTable["big-biter"]
+subEnemyNumberTable["big-spitter-Mk3"] = 			subEnemyNumberTable["big-biter"]
 
-subEnemyNumberTable["big-biter-Mk2"] = {}
-subEnemyNumberTable["big-biter-Mk2"][0] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][1] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][2] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][3] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][4] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][5] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][6] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][7] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][8] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][9] = 			5	-- small-Mk3
-subEnemyNumberTable["big-biter-Mk2"][10] =			6	-- small-Mk3
+-- 5dim Battlefield
+subEnemyNumberTable["5d-medium-biter-laser"] = 		subEnemyNumberTable["medium-biter"]
+subEnemyNumberTable["5d-medium-biter-physical"] = 	subEnemyNumberTable["medium-biter"]
+subEnemyNumberTable["5d-medium-biter-explosive"] = 	subEnemyNumberTable["medium-biter"]
+subEnemyNumberTable["5d-big-biter-laser"] = 		subEnemyNumberTable["big-biter"]
+subEnemyNumberTable["5d-big-biter-physical"] = 		subEnemyNumberTable["big-biter"]
+subEnemyNumberTable["5d-big-biter-explosive"] = 	subEnemyNumberTable["big-biter"]
 
-subEnemyNumberTable["big-spitter-Mk2"] = 			subEnemyNumberTable["big-biter-Mk2"]
-subEnemyNumberTable["big-biter-Mk3"] = 				subEnemyNumberTable["big-biter-Mk2"]
-subEnemyNumberTable["big-spitter-Mk3"] = 			subEnemyNumberTable["big-biter-Mk2"]
-
+subEnemyNumberTable["5d-medium-spiter-rocket"] = 	subEnemyNumberTable["medium-biter"]
+subEnemyNumberTable["5d-medium-spiter-fire"] = 		subEnemyNumberTable["medium-biter"]
+subEnemyNumberTable["5d-big-spiter-rocket"] = 		subEnemyNumberTable["big-biter"]
+subEnemyNumberTable["5d-big-spiter-fire"] = 		subEnemyNumberTable["big-biter"]

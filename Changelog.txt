@@ -1,4 +1,8 @@
 Version 1.0.0 - February 16, 2016
 ---------------------------------
-
 Initial release, featuring enemies that spawn smaller enemies on death, leading to larger swarms of enemies attacking you.
+
+
+Version 1.0.1 - March 27, 2016
+---------------------------------
+Added support for the 5dim Battlefield mod and its new enemies.

@@ -10,20 +10,6 @@ unitsSpawnUnitsOnDeath = true
 
 
 -- ADVANCED
--- This table enumerates enemies that are too small to fragment any further on death.
-ignoredEnemiesTable = {}
-ignoredEnemiesTable["small-biter"] = 				true
-ignoredEnemiesTable["small-spitter"] = 				true
-ignoredEnemiesTable["small-biter-Mk2"] = 			true
-ignoredEnemiesTable["small-spitter-Mk2"] = 			true
-ignoredEnemiesTable["small-biter-Mk3"] = 			true
-ignoredEnemiesTable["small-spitter-Mk3"] = 			true
-ignoredEnemiesTable["5d-small-biter-laser"] = 		true
-ignoredEnemiesTable["5d-small-biter-physical"] = 	true
-ignoredEnemiesTable["5d-small-biter-explosive"] = 	true
-ignoredEnemiesTable["5d-small-spiter-rocket"] = 	true
-ignoredEnemiesTable["5d-small-spiter-fire"] = 		true
-
 
 -- The result in the right column is the enemy that appears when the enemy in the left column dies. So if a behemoth spitter dies, medium spitters will appear.
 -- For spawners, the current evolution factor rounded down to the nearest 10% (though 99% is rounded up to 100%) is used to look up which enemy appears.

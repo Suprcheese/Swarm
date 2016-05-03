@@ -30,7 +30,7 @@ function On_Init()
 end
 
 script.on_event(defines.events.on_entity_died, function(event)
-	if ignoredEnemiesTable[event.entity.name] then
+	if not subEnemyNameTable[event.entity.name] then
 		return
 	end
 	if global.tick < event.tick then
@@ -48,9 +48,6 @@ end)
 
 function spawnSubEnemies(enemy)
 	local subEnemyName = subEnemyNameTable[enemy.name]
-	if not subEnemyName then
-		return
-	end
 	if subEnemyNameTable[enemy.name][global.evoFactorFloor] then
 		subEnemyName = subEnemyNameTable[enemy.name][global.evoFactorFloor]
 	end

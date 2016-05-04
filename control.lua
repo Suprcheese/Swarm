@@ -27,10 +27,21 @@ function On_Init()
 	else
 		global.NatEvoDetected = false
 	end
+	if game.entity_prototypes["bob-bigger-biter"] then
+		global.BobsEnemies126Detected = true
+	else
+		global.BobsEnemies126Detected = false
+	end
+	if game.entity_prototypes["bob-leviathan-biter"] then
+		global.BobsEnemies127Detected = true
+	else
+		global.BobsEnemies127Detected = false
+	end
+	populateTables()
 end
 
 script.on_event(defines.events.on_entity_died, function(event)
-	if not subEnemyNameTable[event.entity.name] then
+	if not global.subEnemyNameTable[event.entity.name] then
 		return
 	end
 	if global.tick < event.tick then
@@ -47,11 +58,11 @@ script.on_event(defines.events.on_entity_died, function(event)
 end)
 
 function spawnSubEnemies(enemy)
-	local subEnemyName = subEnemyNameTable[enemy.name]
-	if subEnemyNameTable[enemy.name][global.evoFactorFloor] then
-		subEnemyName = subEnemyNameTable[enemy.name][global.evoFactorFloor]
+	local subEnemyName = global.subEnemyNameTable[enemy.name]
+	if global.subEnemyNameTable[enemy.name][global.evoFactorFloor] then
+		subEnemyName = global.subEnemyNameTable[enemy.name][global.evoFactorFloor]
 	end
-	local number = subEnemyNumberTable[enemy.name][global.evoFactorFloor]
+	local number = global.subEnemyNumberTable[enemy.name][global.evoFactorFloor]
 	for i = 1, number do
 		local subEnemyPosition = enemy.surface.find_non_colliding_position(subEnemyName, enemy.position, 2 + isSpawner(enemy), 0.5)
 		if subEnemyPosition then

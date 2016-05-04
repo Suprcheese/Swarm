@@ -1,7 +1,7 @@
-Swarm 1.0.1
+Swarm 1.0.2
 ===========
 
-Version 1.0.1 was released March 27, 2016, was tested using Factorio v0.12.29, and was authored by Supercheese.
+Version 1.0.2 was released May 4, 2016, was tested using Factorio v0.12.33, and was authored by Supercheese.
 
 Beware the swarm! This mod makes larger biters and spitters fragment into multiple smaller enemies on death. Now, for instance, killing a medium biter means you have to deal with the small biters that spawn from the medium corpse.
 Spawners, too, release enemies when they die. Now you have to be more careful when clearing enemy bases, because if the evolution factor is high enough, you might be faced with multiple behemoths appearing for each spawner you kill!
@@ -28,8 +28,8 @@ Additionally, firing an ion cannon, Big Bang, or other weapon of mass destructio
 Credits etc:
 ------------
 
-I checked out bobenemies_0.12.6, Dytech_War_1.9.9, Natural_Evolution_Enemies_5.0.5, and 5dim_battlefield 0.0.6 when writing this mod.
-Earlier versions might still work, but are untested.
+I checked out bobenemies_0.12.6 & 0.12.7, Dytech_War_1.9.9, Natural_Evolution_Enemies_5.0.5, and 5dim_battlefield 0.0.6 when writing this mod.
+Other versions might still work, but are untested.
 
 Thanks to the #factorio IRC denizens for advice & bugtesting.
 

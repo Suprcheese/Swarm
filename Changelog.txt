@@ -6,3 +6,8 @@ Initial release, featuring enemies that spawn smaller enemies on death, leading 
 Version 1.0.1 - March 27, 2016
 ---------------------------------
 Added support for the 5dim Battlefield mod and its new enemies.
+
+
+Version 1.0.2 - May 4, 2016
+---------------------------
+Added support for Bob's Enemies 0.12.7.

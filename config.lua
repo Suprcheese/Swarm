@@ -264,6 +264,22 @@ global.subEnemyNameTable["5d-medium-spiter-fire"] = 		"5d-small-spiter-fire"
 global.subEnemyNameTable["5d-big-spiter-rocket"] = 			"5d-small-spiter-rocket"
 global.subEnemyNameTable["5d-big-spiter-fire"] = 			"5d-small-spiter-fire"
 
+-- Vampire Biters
+global.subEnemyNameTable["medium-vampire"] = 				"small-vampire"
+global.subEnemyNameTable["big-vampire"] = 					"small-vampire"
+
+global.subEnemyNameTable["vampire-den"][0] = 				"small-vampire"
+global.subEnemyNameTable["vampire-den"][1] = 				"small-vampire"
+global.subEnemyNameTable["vampire-den"][2] = 				"small-vampire"
+global.subEnemyNameTable["vampire-den"][3] = 				"medium-vampire"
+global.subEnemyNameTable["vampire-den"][4] = 				"medium-vampire"
+global.subEnemyNameTable["vampire-den"][5] = 				"medium-vampire"
+global.subEnemyNameTable["vampire-den"][6] = 				"big-vampire"
+global.subEnemyNameTable["vampire-den"][7] = 				"big-vampire"
+global.subEnemyNameTable["vampire-den"][8] = 				"big-vampire"
+global.subEnemyNameTable["vampire-den"][9] = 				"big-vampire"
+global.subEnemyNameTable["vampire-den"][10] =				"big-vampire"
+
 
 
 -- NUMBERS
@@ -755,4 +771,21 @@ global.subEnemyNumberTable["5d-medium-spiter-rocket"] = 	global.subEnemyNumberTa
 global.subEnemyNumberTable["5d-medium-spiter-fire"] = 		global.subEnemyNumberTable["medium-biter"]
 global.subEnemyNumberTable["5d-big-spiter-rocket"] = 		global.subEnemyNumberTable["big-biter"]
 global.subEnemyNumberTable["5d-big-spiter-fire"] = 			global.subEnemyNumberTable["big-biter"]
+
+-- Vampire Biters
+global.subEnemyNumberTable["medium-vampire"] = 				global.subEnemyNumberTable["medium-biter"]
+global.subEnemyNumberTable["big-vampire"] = 				global.subEnemyNumberTable["big-biter"]
+
+global.subEnemyNumberTable["vampire-den"] = {}
+global.subEnemyNumberTable["vampire-den"][0] = 				8    --small
+global.subEnemyNumberTable["vampire-den"][1] = 				8    --small
+global.subEnemyNumberTable["vampire-den"][2] = 				9    --small
+global.subEnemyNumberTable["vampire-den"][3] = 				5    --medium
+global.subEnemyNumberTable["vampire-den"][4] = 				6    --medium
+global.subEnemyNumberTable["vampire-den"][5] = 				7    --medium
+global.subEnemyNumberTable["vampire-den"][6] = 				3    --big
+global.subEnemyNumberTable["vampire-den"][7] = 				4    --big
+global.subEnemyNumberTable["vampire-den"][8] = 				5    --big
+global.subEnemyNumberTable["vampire-den"][9] = 				7    --big
+global.subEnemyNumberTable["vampire-den"][10] =				10   --big
 end

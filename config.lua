@@ -268,6 +268,7 @@ global.subEnemyNameTable["5d-big-spiter-fire"] = 			"5d-small-spiter-fire"
 global.subEnemyNameTable["medium-vampire"] = 				"small-vampire"
 global.subEnemyNameTable["big-vampire"] = 					"small-vampire"
 
+global.subEnemyNameTable["vampire-den"] = {}
 global.subEnemyNameTable["vampire-den"][0] = 				"small-vampire"
 global.subEnemyNameTable["vampire-den"][1] = 				"small-vampire"
 global.subEnemyNameTable["vampire-den"][2] = 				"small-vampire"

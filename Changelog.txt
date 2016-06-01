@@ -16,3 +16,8 @@ Added support for Bob's Enemies 0.12.7.
 Version 1.0.3 - May 12, 2016
 ----------------------------
 Added support for Vampire Biters.
+
+
+Version 1.0.4 - May 31, 2016
+----------------------------
+Spawned enemies now match the force of the enemy they spawned from.

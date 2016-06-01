@@ -66,7 +66,7 @@ function spawnSubEnemies(enemy)
 	for i = 1, number do
 		local subEnemyPosition = enemy.surface.find_non_colliding_position(subEnemyName, enemy.position, 2 + isSpawner(enemy), 0.5)
 		if subEnemyPosition then
-			enemy.surface.create_entity({name = subEnemyName, position = subEnemyPosition, force = game.forces.enemy})
+			enemy.surface.create_entity({name = subEnemyName, position = subEnemyPosition, force = enemy.force})
 		end
 	end
 end

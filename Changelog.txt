@@ -4,7 +4,7 @@ Initial release, featuring enemies that spawn smaller enemies on death, leading 
 
 
 Version 1.0.1 - March 27, 2016
----------------------------------
+------------------------------
 Added support for the 5dim Battlefield mod and its new enemies.
 
 
@@ -21,3 +21,8 @@ Added support for Vampire Biters.
 Version 1.0.4 - May 31, 2016
 ----------------------------
 Spawned enemies now match the force of the enemy they spawned from.
+
+
+Version 1.0.5 - June 30, 2016
+-----------------------------
+Updated for Factorio 0.13.

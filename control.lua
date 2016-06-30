@@ -1,5 +1,4 @@
 require "util"
-require "defines"
 require ("config")
 
 script.on_init(function() On_Init() end)

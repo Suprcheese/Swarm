@@ -26,3 +26,8 @@ Spawned enemies now match the force of the enemy they spawned from.
 Version 1.0.5 - June 30, 2016
 -----------------------------
 Updated for Factorio 0.13.
+
+
+Version 1.0.6 - August 27, 2016
+-------------------------------
+Updated for Factorio 0.14.

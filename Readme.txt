@@ -1,7 +1,7 @@
-Swarm 1.0.6
+Swarm 1.1.0
 ===========
 
-Version 1.0.6 was released August 27, 2016, was tested using Factorio v0.14.1, and was authored by Supercheese.
+Version 1.1.0 was released April 25, 2017, was tested using Factorio v0.15.1, and was authored by Supercheese.
 
 Beware the swarm! This mod makes larger biters and spitters fragment into multiple smaller enemies on death. Now, for instance, killing a medium biter means you have to deal with the small biters that spawn from the medium corpse.
 Spawners, too, release enemies when they die. Now you have to be more careful when clearing enemy bases, because if the evolution factor is high enough, you might be faced with multiple behemoths appearing for each spawner you kill!
@@ -13,8 +13,10 @@ This mod also supports the following:
 -Natural Evolution Enemies
 -5dim Battlefield
 
-The configuration options available in config.lua control how many and what sort of enemies spawn when larger enemies die.
-Here you may adjust these if you so wish (it's quite the wall of text), and you can select that enemies should NOT fragment into smaller versions on death, only spawners -- or vice versa.
+The configuration options available in config.lua control how many and what sort of enemies spawn when larger enemies die. Here you may adjust these if you so wish (it's quite the wall of text).
+
+The in-game Mod Options also has two Swarm settings available: you can choose that enemies should NOT fragment into smaller versions on death, only spawners -- or vice versa. Disabling both options effectively disables the mod entirely.
+You can access these settings from the main menu via: Options -> Mods. You should even be able to change them mid-game in singleplayer or if you are an admin in a multiplayer match.
 
 
 Known Issues:

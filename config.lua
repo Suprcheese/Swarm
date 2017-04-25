@@ -1,15 +1,4 @@
--- BASIC
--- If true, spawners will release several units on death. Now you need to be more careful about attacking the spawners in biter bases.
-spawnersSpawnUnitsOnDeath = true
-
--- If true, larger units will release several smaller units on death. Think you've fully defeated that behemoth? Think again, now it's spawned more biters on death!
--- Note that this has the potential to severely impact game performance if a large wave of biters crashes against your line of turrets.
--- The pathfinder can choke on the hundreds and hundreds of small biters that are spawned when the large biters die.
-unitsSpawnUnitsOnDeath = true
-
-
-
--- ADVANCED
+-- ADVANCED SETTINGS
 
 -- The result in the right column is the enemy that appears when the enemy in the left column dies. So if a behemoth spitter dies, medium spitters will appear.
 -- For spawners, the current evolution factor rounded down to the nearest 10% (though 99% is rounded up to 100%) is used to look up which enemy appears.

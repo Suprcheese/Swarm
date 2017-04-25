@@ -31,3 +31,10 @@ Updated for Factorio 0.13.
 Version 1.0.6 - August 27, 2016
 -------------------------------
 Updated for Factorio 0.14.
+
+
+Version 1.1.0 - April 25, 2017
+------------------------------
+Updated for Factorio 0.15.
+Movied the two basic settings from config.lua to settings.lua, integrating with the in-game Mod Options (Options -> Mods).
+Advanced settings are still retained in config.lua.

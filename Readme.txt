@@ -1,7 +1,7 @@
-Swarm 1.1.0
+Swarm 1.2.0
 ===========
 
-Version 1.1.0 was released April 25, 2017, was tested using Factorio v0.15.1, and was authored by Supercheese.
+Version 1.2.0 was released January _, 2018, was tested using Factorio v0.16.11, and was authored by Supercheese.
 
 Beware the swarm! This mod makes larger biters and spitters fragment into multiple smaller enemies on death. Now, for instance, killing a medium biter means you have to deal with the small biters that spawn from the medium corpse.
 Spawners, too, release enemies when they die. Now you have to be more careful when clearing enemy bases, because if the evolution factor is high enough, you might be faced with multiple behemoths appearing for each spawner you kill!
@@ -12,6 +12,7 @@ This mod also supports the following:
 -Dytech War
 -Natural Evolution Enemies
 -5dim Battlefield
+-Vampire Biters
 
 The configuration options available in config.lua control how many and what sort of enemies spawn when larger enemies die. Here you may adjust these if you so wish (it's quite the wall of text).
 
@@ -23,8 +24,8 @@ Known Issues:
 -------------
 
 Factorio's pathfinding algorithm can choke when large waves of biters crash against your defenses, especially now that so many more small biters are spawning from the corpses of their larger brethren. This may lead to severe lag.
-If it becomes unbearable, you have two recourses: Disable the biter-fragmentation entirely by toggling the appropriate boolean in the Basic section config.lua, or reduce the number of sub-enemies that spawn in the Advanced config section.
-Additionally, firing an ion cannon, Big Bang, or other weapon of mass destruction at a large enemy base may lead to lag as well. This is to be expected, when the game is suddenly spawning in hundreds of new fragmented small enemies.
+If it becomes unbearable, you have two recourses: Disable the biter-fragmentation entirely by toggling the appropriate setting in the Mod Options, or reduce the number of sub-enemies that spawn in the Advanced config section.
+Additionally, firing an ion cannon, Big Bang, artillery cannon, or other weapon of mass destruction at a large enemy base may lead to lag as well. This is to be expected, when the game is suddenly spawning in hundreds of new fragmented small enemies.
 
 
 Credits etc:

@@ -1,40 +1,47 @@
-Version 1.0.0 - February 16, 2016
----------------------------------
-Initial release, featuring enemies that spawn smaller enemies on death, leading to larger swarms of enemies attacking you.
-
-
-Version 1.0.1 - March 27, 2016
-------------------------------
-Added support for the 5dim Battlefield mod and its new enemies.
-
-
-Version 1.0.2 - May 4, 2016
----------------------------
-Added support for Bob's Enemies 0.12.7.
-
-
-Version 1.0.3 - May 12, 2016
-----------------------------
-Added support for Vampire Biters.
-
-
-Version 1.0.4 - May 31, 2016
-----------------------------
-Spawned enemies now match the force of the enemy they spawned from.
-
-
-Version 1.0.5 - June 30, 2016
------------------------------
-Updated for Factorio 0.13.
-
-
-Version 1.0.6 - August 27, 2016
--------------------------------
-Updated for Factorio 0.14.
-
-
-Version 1.1.0 - April 25, 2017
-------------------------------
-Updated for Factorio 0.15.
-Movied the two basic settings from config.lua to settings.lua, integrating with the in-game Mod Options (Options -> Mods).
-Advanced settings are still retained in config.lua.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 0. 1. 2018
+  Changes:
+    - Updated for Factorio 0.16.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 26. 4. 2017
+  Changes:
+    - Updated for Factorio 0.15.
+    - Moved the two basic settings from config.lua to settings.lua, integrating with the in-game Mod Options (Options -> Mods).
+      Advanced settings are still retained in config.lua.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 27. 8. 2016
+  Changes:
+    - Updated for Factorio 0.14.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 30. 6. 2016
+  Changes:
+    - Updated for Factorio 0.13.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 31. 5. 2016
+  Bugfixes:
+    - Spawned enemies now match the force of the enemy they spawned from.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 12. 5. 2016
+  Minor Features:
+    - Added support for Vampire Biters.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 4. 5. 2016
+  Minor Features:
+    - Added support for Bob's Enemies 0.12.7.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 27. 3. 2016
+  Minor Features:
+    - Added support for the 5dim Battlefield mod and its new enemies.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0 - First public release
+Date: 16. 2. 2016
+  Major Features:
+    - Initial release, featuring enemies that spawn smaller enemies on death, leading to larger swarms of enemies attacking you.

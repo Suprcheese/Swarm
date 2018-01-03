@@ -1,7 +1,7 @@
 Swarm 1.2.0
 ===========
 
-Version 1.2.0 was released January _, 2018, was tested using Factorio v0.16.11, and was authored by Supercheese.
+Version 1.2.0 was released January 3, 2018, was tested using Factorio v0.16.11, and was authored by Supercheese.
 
 Beware the swarm! This mod makes larger biters and spitters fragment into multiple smaller enemies on death. Now, for instance, killing a medium biter means you have to deal with the small biters that spawn from the medium corpse.
 Spawners, too, release enemies when they die. Now you have to be more careful when clearing enemy bases, because if the evolution factor is high enough, you might be faced with multiple behemoths appearing for each spawner you kill!

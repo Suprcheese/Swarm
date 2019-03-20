@@ -41,49 +41,8 @@ global.subEnemyNameTable["spitter-spawner"][8] = 			"big-spitter"
 global.subEnemyNameTable["spitter-spawner"][9] = 			"behemoth-spitter"
 global.subEnemyNameTable["spitter-spawner"][10] =			"behemoth-spitter"
 
--- Bob's Enemies 0.12.6 and earlier
-if global.BobsEnemies126Detected then
-global.subEnemyNameTable["bob-bigger-biter"] =				"big-biter"
-global.subEnemyNameTable["bob-biggest-biter"] =				"bob-bigger-biter"
-global.subEnemyNameTable["bob-fire-biter"] =				"bob-bigger-biter"
-global.subEnemyNameTable["bob-titan-biter"] =				"bob-biggest-biter"
-global.subEnemyNameTable["bob-behemoth-biter"] =			"bob-titan-biter"
-
-global.subEnemyNameTable["bob-bigger-spitter"] =			"big-spitter"
-global.subEnemyNameTable["bob-biggest-spitter"] =			"bob-bigger-spitter"
-global.subEnemyNameTable["bob-poison-spitter"] =			"bob-bigger-spitter"
-global.subEnemyNameTable["bob-titan-spitter"] =				"bob-biggest-spitter"
-global.subEnemyNameTable["bob-behemoth-spitter"] =			"bob-titan-spitter"
-
-global.subEnemyNameTable["bob-biter-spawner"] = {}
-global.subEnemyNameTable["bob-biter-spawner"][0] = 			"small-biter"
-global.subEnemyNameTable["bob-biter-spawner"][1] = 			"small-biter"
-global.subEnemyNameTable["bob-biter-spawner"][2] = 			"small-biter"
-global.subEnemyNameTable["bob-biter-spawner"][3] = 			"medium-biter"
-global.subEnemyNameTable["bob-biter-spawner"][4] = 			"medium-biter"
-global.subEnemyNameTable["bob-biter-spawner"][5] = 			"medium-biter"
-global.subEnemyNameTable["bob-biter-spawner"][6] = 			"big-biter"
-global.subEnemyNameTable["bob-biter-spawner"][7] = 			"bob-bigger-biter"
-global.subEnemyNameTable["bob-biter-spawner"][8] = 			"bob-biggest-biter"
-global.subEnemyNameTable["bob-biter-spawner"][9] = 			"bob-titan-biter"
-global.subEnemyNameTable["bob-biter-spawner"][10] =			"bob-behemoth-biter"
-
-global.subEnemyNameTable["bob-spitter-spawner"] = {}
-global.subEnemyNameTable["bob-spitter-spawner"][0] = 		"small-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][1] = 		"small-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][2] = 		"small-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][3] = 		"medium-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][4] = 		"medium-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][5] = 		"medium-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][6] = 		"big-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][7] = 		"bob-bigger-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][8] = 		"bob-biggest-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][9] = 		"bob-titan-spitter"
-global.subEnemyNameTable["bob-spitter-spawner"][10] =		"bob-behemoth-spitter"
-end
-
--- Bob's Enemies 0.12.7 and later
-if global.BobsEnemies127Detected then
+-- Bob's Enemies
+if global.BobsEnemiesDetected then
 global.subEnemyNameTable["bob-big-piercing-biter"] =		"big-biter"
 global.subEnemyNameTable["bob-huge-acid-biter"] =			"bob-big-piercing-biter"
 global.subEnemyNameTable["bob-huge-explosive-biter"] =		"bob-big-piercing-biter"
@@ -132,7 +91,7 @@ global.subEnemyNameTable["bob-spitter-spawner"][9] = 		"bob-titan-spitter"
 global.subEnemyNameTable["bob-spitter-spawner"][10] =		"bob-leviathan-spitter"
 end
 
--- Dytech War
+-- Dytech War; even though Dytech is long-dead
 global.subEnemyNameTable["young-berserk-biter"] = 			"small-biter"
 global.subEnemyNameTable["young-elder-biter"] = 			"small-biter"
 global.subEnemyNameTable["young-king-biter"] = 				"medium-biter"
@@ -205,7 +164,7 @@ global.subEnemyNameTable["spitter-spawner"][9] = 			"adult-elder-spitter"
 global.subEnemyNameTable["spitter-spawner"][10] =			"adult-queen-spitter"
 end
 
--- Natural Evolution Enemies
+-- Natural Evolution Enemies; Ugh it's updated and now I have to change everything
 global.subEnemyNameTable["medium-biter-Mk2"] = 				"small-biter-Mk2"
 global.subEnemyNameTable["medium-biter-Mk3"] = 				"small-biter-Mk3"
 global.subEnemyNameTable["big-biter-Mk2"] = 				"small-biter-Mk3"
@@ -297,32 +256,32 @@ global.subEnemyNumberTable["medium-biter"][10] =			3	-- small
 global.subEnemyNumberTable["medium-spitter"] = 				global.subEnemyNumberTable["medium-biter"] -- Same numbers for spitters as biters of the same class
 
 global.subEnemyNumberTable["big-biter"] = {}
-global.subEnemyNumberTable["big-biter"][0] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][1] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][2] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][3] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][4] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][5] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][6] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][7] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][8] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][9] = 				3	-- small
-global.subEnemyNumberTable["big-biter"][10] =				3	-- small
+global.subEnemyNumberTable["big-biter"][0] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][1] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][2] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][3] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][4] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][5] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][6] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][7] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][8] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][9] = 				3	-- medium
+global.subEnemyNumberTable["big-biter"][10] =				3	-- medium
 
 global.subEnemyNumberTable["big-spitter"] = 				global.subEnemyNumberTable["big-biter"]
 
 global.subEnemyNumberTable["behemoth-biter"] = {}
-global.subEnemyNumberTable["behemoth-biter"][0] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][1] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][2] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][3] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][4] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][5] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][6] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][7] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][8] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][9] = 			2	-- medium
-global.subEnemyNumberTable["behemoth-biter"][10] =			2	-- medium
+global.subEnemyNumberTable["behemoth-biter"][0] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][1] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][2] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][3] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][4] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][5] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][6] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][7] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][8] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][9] = 			2	-- big
+global.subEnemyNumberTable["behemoth-biter"][10] =			2	-- big
 
 global.subEnemyNumberTable["behemoth-spitter"] = 			global.subEnemyNumberTable["behemoth-biter"]
 
@@ -341,179 +300,99 @@ global.subEnemyNumberTable["biter-spawner"][10] =			2    --behemoth
 
 global.subEnemyNumberTable["spitter-spawner"] = 			global.subEnemyNumberTable["biter-spawner"]
 
--- Bob's Enemies 0.12.6 and earlier
-if global.BobsEnemies126Detected then
-global.subEnemyNumberTable["bob-bigger-biter"] = {}
-global.subEnemyNumberTable["bob-bigger-biter"][0] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][1] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][2] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][3] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][4] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][5] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][6] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][7] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][8] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][9] = 		3	-- medium
-global.subEnemyNumberTable["bob-bigger-biter"][10] =		3	-- medium
-
-global.subEnemyNumberTable["bob-bigger-spitter"] =			global.subEnemyNumberTable["bob-bigger-biter"]
-
-global.subEnemyNumberTable["bob-biggest-biter"] = {}
-global.subEnemyNumberTable["bob-biggest-biter"][0] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][1] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][2] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][3] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][4] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][5] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][6] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][7] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][8] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][9] = 		4	-- medium
-global.subEnemyNumberTable["bob-biggest-biter"][10] =		4	-- medium
-
-global.subEnemyNumberTable["bob-fire-biter"] =				global.subEnemyNumberTable["bob-biggest-biter"]
-global.subEnemyNumberTable["bob-biggest-spitter"] =			global.subEnemyNumberTable["bob-biggest-biter"]
-global.subEnemyNumberTable["bob-poison-spitter"] =			global.subEnemyNumberTable["bob-biggest-biter"]
-
-global.subEnemyNumberTable["bob-titan-biter"] = {}
-global.subEnemyNumberTable["bob-titan-biter"][0] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][1] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][2] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][3] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][4] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][5] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][6] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][7] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][8] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][9] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][10] =			2	-- big
-
-global.subEnemyNumberTable["bob-titan-spitter"] =			global.subEnemyNumberTable["bob-titan-biter"]
-
-global.subEnemyNumberTable["bob-behemoth-biter"] = {}
-global.subEnemyNumberTable["bob-behemoth-biter"][0] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][1] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][2] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][3] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][4] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][5] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][6] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][7] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][8] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][9] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][10] =		2	-- big
-
-global.subEnemyNumberTable["bob-behemoth-spitter"] =		global.subEnemyNumberTable["bob-behemoth-biter"]
-
-global.subEnemyNumberTable["bob-biter-spawner"] = {}
-global.subEnemyNumberTable["bob-biter-spawner"][0] = 		8   -- small
-global.subEnemyNumberTable["bob-biter-spawner"][1] = 		8   -- small
-global.subEnemyNumberTable["bob-biter-spawner"][2] = 		9   -- small
-global.subEnemyNumberTable["bob-biter-spawner"][3] = 		5   -- medium
-global.subEnemyNumberTable["bob-biter-spawner"][4] = 		6   -- medium
-global.subEnemyNumberTable["bob-biter-spawner"][5] = 		7   -- medium
-global.subEnemyNumberTable["bob-biter-spawner"][6] = 		4   -- big
-global.subEnemyNumberTable["bob-biter-spawner"][7] = 		4   -- bob-bigger
-global.subEnemyNumberTable["bob-biter-spawner"][8] = 		4   -- bob-biggest
-global.subEnemyNumberTable["bob-biter-spawner"][9] = 		2   -- bob-titan
-global.subEnemyNumberTable["bob-biter-spawner"][10] =		2   -- bob-behemoth
-
-global.subEnemyNumberTable["bob-spitter-spawner"] =			global.subEnemyNumberTable["bob-biter-spawner"]
-end
-
--- Bob's Enemies 0.12.7 and later
-if global.BobsEnemies127Detected then
+-- Bob's Enemies
+if global.BobsEnemiesDetected then
 global.subEnemyNumberTable["bob-big-piercing-biter"] = {}
-global.subEnemyNumberTable["bob-big-piercing-biter"][0] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][1] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][2] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][3] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][4] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][5] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][6] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][7] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][8] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][9] = 	3	-- medium
-global.subEnemyNumberTable["bob-big-piercing-biter"][10] =	3	-- medium
+global.subEnemyNumberTable["bob-big-piercing-biter"][0] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][1] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][2] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][3] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][4] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][5] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][6] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][7] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][8] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][9] = 	3	-- big
+global.subEnemyNumberTable["bob-big-piercing-biter"][10] =	3	-- big
 
 global.subEnemyNumberTable["bob-big-electric-spitter"] =	global.subEnemyNumberTable["bob-big-piercing-biter"]
 
 global.subEnemyNumberTable["bob-huge-acid-biter"] = {}
-global.subEnemyNumberTable["bob-huge-acid-biter"][0] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][1] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][2] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][3] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][4] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][5] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][6] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][7] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][8] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][9] = 		2	-- medium
-global.subEnemyNumberTable["bob-huge-acid-biter"][10] =		2	-- medium
+global.subEnemyNumberTable["bob-huge-acid-biter"][0] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][1] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][2] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][3] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][4] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][5] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][6] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][7] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][8] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][9] = 		2	-- bob-big
+global.subEnemyNumberTable["bob-huge-acid-biter"][10] =		2	-- bob-big
 
 global.subEnemyNumberTable["bob-huge-explosive-biter"] =	global.subEnemyNumberTable["bob-huge-acid-biter"]
 global.subEnemyNumberTable["bob-huge-explosive-spitter"] =	global.subEnemyNumberTable["bob-huge-acid-biter"]
 global.subEnemyNumberTable["bob-huge-acid-spitter"] =		global.subEnemyNumberTable["bob-huge-acid-biter"]
 
 global.subEnemyNumberTable["bob-giant-poison-biter"] = {}
-global.subEnemyNumberTable["bob-giant-poison-biter"][0] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][1] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][2] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][3] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][4] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][5] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][6] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][7] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][8] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][9] = 	2	-- big
-global.subEnemyNumberTable["bob-giant-poison-biter"][10] =	2	-- big
+global.subEnemyNumberTable["bob-giant-poison-biter"][0] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][1] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][2] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][3] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][4] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][5] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][6] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][7] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][8] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][9] = 	2	-- bob-huge
+global.subEnemyNumberTable["bob-giant-poison-biter"][10] =	2	-- bob-huge
 
 global.subEnemyNumberTable["bob-giant-fire-biter"] =		global.subEnemyNumberTable["bob-giant-poison-biter"]
 global.subEnemyNumberTable["bob-giant-fire-spitter"] =		global.subEnemyNumberTable["bob-giant-poison-biter"]
 global.subEnemyNumberTable["bob-giant-poison-spitter"] =	global.subEnemyNumberTable["bob-giant-poison-biter"]
 
 global.subEnemyNumberTable["bob-titan-biter"] = {}
-global.subEnemyNumberTable["bob-titan-biter"][0] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][1] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][2] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][3] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][4] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][5] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][6] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][7] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][8] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][9] = 			2	-- big
-global.subEnemyNumberTable["bob-titan-biter"][10] =			2	-- big
+global.subEnemyNumberTable["bob-titan-biter"][0] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][1] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][2] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][3] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][4] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][5] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][6] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][7] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][8] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][9] = 			2	-- bob-giant
+global.subEnemyNumberTable["bob-titan-biter"][10] =			2	-- bob-giant
 
 global.subEnemyNumberTable["bob-titan-spitter"] =			global.subEnemyNumberTable["bob-titan-biter"]
 
 global.subEnemyNumberTable["bob-behemoth-biter"] = {}
-global.subEnemyNumberTable["bob-behemoth-biter"][0] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][1] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][2] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][3] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][4] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][5] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][6] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][7] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][8] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][9] = 		2	-- big
-global.subEnemyNumberTable["bob-behemoth-biter"][10] =		2	-- big
+global.subEnemyNumberTable["bob-behemoth-biter"][0] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][1] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][2] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][3] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][4] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][5] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][6] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][7] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][8] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][9] = 		2	-- bob-titan
+global.subEnemyNumberTable["bob-behemoth-biter"][10] =		2	-- bob-titan
 
 global.subEnemyNumberTable["bob-behemoth-spitter"] =		global.subEnemyNumberTable["bob-behemoth-biter"]
 
 global.subEnemyNumberTable["bob-leviathan-biter"] = {}
-global.subEnemyNumberTable["bob-leviathan-biter"][0] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][1] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][2] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][3] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][4] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][5] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][6] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][7] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][8] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][9] = 		2	-- bob-big
-global.subEnemyNumberTable["bob-leviathan-biter"][10] =		2	-- bob-big
+global.subEnemyNumberTable["bob-leviathan-biter"][0] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][1] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][2] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][3] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][4] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][5] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][6] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][7] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][8] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][9] = 		2	-- bob-behemoth
+global.subEnemyNumberTable["bob-leviathan-biter"][10] =		2	-- bob-behemoth
 
 global.subEnemyNumberTable["bob-leviathan-spitter"] =		global.subEnemyNumberTable["bob-leviathan-biter"]
 

@@ -1,14 +1,14 @@
 {
 	"name": "Swarm",
-	"version": "1.2.0",
-  "factorio_version": "0.17",
+	"version": "1.3.0",
+	"factorio_version": "0.17",
 	"title": "Swarm",
 	"author": "Supercheese",
 	"homepage": "http://www.factorioforums.com/forum/viewtopic.php?f=93&t=20165",
 	"dependencies": [
-		"base >= 0.16.0",
+		"base >= 0.17.15",
 		"? bobenemies >= 0.12.0",
-		"? Natural_Evolution_Enemies >= 5.0.0",
+		"? Natural_Evolution_Enemies",
 		"? MAIN-DyTech-War >= 1.1.0",
 		"? 5dim_battlefield >= 0.0.6",
 		"? Vampire_Biters >= 0.0.1"

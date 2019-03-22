@@ -1,7 +1,7 @@
-Swarm 1.2.0
+Swarm 1.3.0
 ===========
 
-Version 1.2.0 was released January 3, 2018, was tested using Factorio v0.16.11, and was authored by Supercheese.
+Version 1.3.0 was released March 2X, 2019, was tested using Factorio v0.17.16, and was authored by Supercheese, with contributions from Pawz.
 
 Beware the swarm! This mod makes larger biters and spitters fragment into multiple smaller enemies on death. Now, for instance, killing a medium biter means you have to deal with the small biters that spawn from the medium corpse.
 Spawners, too, release enemies when they die. Now you have to be more careful when clearing enemy bases, because if the evolution factor is high enough, you might be faced with multiple behemoths appearing for each spawner you kill!
@@ -26,15 +26,16 @@ Known Issues:
 Factorio's pathfinding algorithm can choke when large waves of biters crash against your defenses, especially now that so many more small biters are spawning from the corpses of their larger brethren. This may lead to severe lag.
 If it becomes unbearable, you have two recourses: Disable the biter-fragmentation entirely by toggling the appropriate setting in the Mod Options, or reduce the number of sub-enemies that spawn in the Advanced config section.
 Additionally, firing an ion cannon, Big Bang, artillery cannon, or other weapon of mass destruction at a large enemy base may lead to lag as well. This is to be expected, when the game is suddenly spawning in hundreds of new fragmented small enemies.
+As of v1.3.0, the lag should be reduced, thanks to a new spawn queueing system.
 
 
 Credits etc:
 ------------
 
-I checked out bobenemies_0.12.6 & 0.12.7, Dytech_War_1.9.9, Natural_Evolution_Enemies_5.0.5, 5dim_battlefield 0.0.6, and Vampire_Biters_0.0.5 when writing this mod.
+I checked out bobenemies_0.17.2, Dytech_War_1.9.9, Natural_Evolution_Enemies_0.17.5, 5dim_battlefield 0.17.0, and Vampire_Biters_0.0.5 when writing this mod.
 Other versions might still work, but are untested.
 
-Thanks to the #factorio IRC denizens for advice & bugtesting.
+Thanks to the Factorio IRC and Discord denizens for advice, bugtesting, and contributions.
 
 See also the associated forum thread to give feedback, view screenshots, etc.:
 

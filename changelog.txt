@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 2X. 3. 2019
+  Changes:
+    - Updated for Factorio 0.17.
+    - New configs for Bob's Enemies increasing effective difficulty, making each tier of enemy fragment into the previous tier, rather than skipping tiers. (Pawz)
+    - New configs to support updated versions of Natural Evolution Enemies and 5Dim Battlefield.
+  Minor Features:
+    - New spawn queueing system to hopefully improve performance. (Pawz)
+---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 3. 1. 2018
   Changes:
